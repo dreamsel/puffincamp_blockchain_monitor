@@ -1,0 +1,43 @@
+<html>
+   <header>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css"></script>
+   </header>
+   <style>
+		td {padding:5px;}
+    .add_node{
+      border:1px solid green;
+      padding:5px;
+    }
+    .add_node input{
+      margin:5px;
+    }
+    .node_list_wrapper{
+      min-height:60vh;
+    }
+   </style>
+   <body>
+
+      <div id="network-container" style="width:70%; float:left"></div>
+	  <div style="width:30%; float:right">
+      <h3>Nodes</h3>
+        <div class="node_list_wrapper">
+        <table id="node_list">
+          <tbody>
+            <tr><th>name</th><th>url</th><th>hash</th></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="add_node">
+          <h4>Add node</h4>
+          <div><label>url</label><input type="text" name="url" value="" id="url"></div>
+          <div id="message"></div>
+          <div><button id="add_btn">Add node</button></div>
+        </div>
+      </div>
+	  <div style="clear:both">
+   </body>
+   <script src="./main.js"></script>
+</html>
